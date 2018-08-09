@@ -10,6 +10,8 @@ money_hash[:dimes] = dimes
 coins = coins % 10
 nickels = coins/5 
 money_hash[:nickels] = nickels
-
+coins = coins % 5 
+pennies = coins/1
+money_hash[:pennies] = pennies
 end
 puts least_coins(98)
